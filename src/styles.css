@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+/* Layout Styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Main content area */
+  .content {
+    margin-left: 260px; /* To offset the sidebar */
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+  
+    .content {
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  }
+  
