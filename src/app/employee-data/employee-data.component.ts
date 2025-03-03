@@ -4,11 +4,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { ApiService } from '../services/api.service';
+import { HighlightDirective } from '../highlight.directive';
 
 @Component({
   selector: 'app-employee-data',
   standalone: true,
-  imports: [FormsModule, NgSelectModule, NgbDatepickerModule, ReactiveFormsModule],
+  imports: [FormsModule, NgSelectModule, NgbDatepickerModule, ReactiveFormsModule, HighlightDirective],
   templateUrl: './employee-data.component.html',
   styleUrl: './employee-data.component.css'
 })
